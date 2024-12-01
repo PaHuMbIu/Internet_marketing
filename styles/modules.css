@@ -1,0 +1,130 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 34% 35%);
+    border-top: 1px solid #d5d6dc;
+}
+
+.course-header {
+    padding-left: 380px;
+    padding-top: 30px;
+}
+
+.scrollbar {
+    max-height: calc(90vh - 150px);
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.course-info {
+    display: flex;
+    padding: 24px 24px 0 24px;
+
+    border-right: 1px solid #e7e8ec;
+    border-left: 1px solid #e7e8ec;
+    border-top: 1px solid #e7e8ec;
+    border-radius: 8px 8px 0 0;
+    background-color: #f2f3f5;
+}
+
+.course-duration {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #0404138c;
+
+    padding-left: 8px;
+}
+
+.course-title {
+    font-size: 16px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+
+    margin: 0;
+    padding: 8px 24px 24px 24px;
+
+    border-right: 1px solid #e7e8ec;
+    border-left: 1px solid #e7e8ec;
+    border-bottom: 1px solid #e7e8ec;
+    background-color: #f2f3f5;
+
+}
+
+.module-list {
+    padding: 16px 8px 16px 24px;
+    border-right: 1px solid #e7e8ec;
+    border-left: 1px solid #e7e8ec;
+    border-bottom: 1px solid #e7e8ec;
+
+    cursor: pointer;
+}
+
+.module-list:hover {
+    background-color: #e7e8ea;
+}
+
+.module-list:last-child {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 1px 0 #e7e8ec;
+}
+
+.color-label {
+    background-color: #f2f3f5;
+}
+
+.module-item {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #0404138c;
+}
+
+.module-title {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+/* LESSON 1 */
+.container-lesson {
+    display: none;
+
+    padding: 16px 8px 16px 24px;
+    background-color: #f2f3f5;
+    border-right: 1px solid #e7e8ec;
+    border-left: 1px solid #e7e8ec;
+    border-bottom: 1px solid #e7e8ec;
+
+    cursor: pointer;
+}
+
+.container-lesson:hover {
+    background-color: #e7e8ea;
+}
+
+.selected-lesson {
+    border-left: 3px solid #ef3124;
+    background-color: #e7e8ea;
+}
+
+.show-container-lesson {
+    display: block;
+}
+
+.course-lesson {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #0404138c;
+}
+
+.lesson {
+    font-size: 14px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+}

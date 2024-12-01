@@ -1,0 +1,198 @@
+.course-heading {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+
+    padding-top: 32px;
+    padding-left: 26px;
+}
+
+.house {
+    cursor: pointer;
+}
+
+.separator-course-heading {
+    padding: 0 8px 0 8px;
+}
+
+.section-title {
+    color: #0404138c;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 1px;
+
+    cursor: pointer;
+}
+
+.course-main-title {
+    color: #0404138c;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 14px;
+
+    padding-top: 1px;
+
+    cursor: pointer;
+}
+
+.course-item-title {
+    color: #05081d61;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 14px;
+
+    padding-top: 1px;
+}
+
+.content-title {
+    font-family: "Segoe UI";
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.content-description {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.container-video {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-video {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 655 / 400 !important;
+    object-fit: cover;
+
+    margin-bottom: 32px;
+}
+
+.marker {
+    position: absolute;
+    right: -8px;
+    top: 300px;
+
+    width: 16px;
+    height: 16px;
+    background-color: #ef3124;
+    border-radius: 100%;
+}
+
+.content-underline {
+    border-top: 1px solid #f2f3f5;
+    width: 185px;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+.text-content {
+    color: #0404138c;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    padding: 12px 0 0 24px;
+}
+
+.business-account-modal {
+    background-color: rgb(232, 242, 254);
+    border-radius: 24px;
+    width: 100%;
+    /*min-height: 250px;*/
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.container-banner-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-title {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner-item {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-form-field {
+    display: block;
+}
+
+.form-field {
+    background-color: #d2dcea;
+    border: none;
+    border-radius: 8px;
+    max-height: 52px;
+    padding: 14px 12px;
+
+    font-family: "Segoe UI";
+    font-size: 1rem;
+    font-weight: 400;
+
+    transition: background-color 0.2s ease;
+}
+
+.form-field:focus {
+    outline: 2px solid rgb(137,137,145);
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.btn-open {
+    border: none;
+    border-radius: 8px;
+    background-color: #ef3124;
+    padding: 0 27px 0 27px;
+    width: 190px;
+    max-height: 49px;
+
+    font-size: 16px;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.btn-open:hover {
+    background-color: #e32a17;
+}
+
+.data-consent {
+    font-family: "Segoe UI";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    padding-top: 30px;
+}
+
+.data-consent > a {
+    color: #0e0e0e;
+}
