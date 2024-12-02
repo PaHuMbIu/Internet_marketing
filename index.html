@@ -14,6 +14,12 @@
 
 <!-- NAVIGATION -->
 <div class="container-navigation">
+    <!-- HEADER SEARCH -->
+    <div class="search-container">
+        <input class="search-input" type="text">
+        <img class="search-icon-input" width="24px" height="25px" src="images/3844432-magnifier-search-zoom_110300.svg" alt="search">
+    </div>
+    <!-- NAVIGATION -->
     <div class="navigation">
         <img src="images/logo.png" width="103" height="59" alt="КУРС Проект Альфа-Банка">
         <nav class="field-nav selected-field-nav">Курсы</nav>
@@ -36,11 +42,6 @@
             <button class="btn-login">Войти</button>
         </div>
     </div>
-</div>
-<!-- HEADER SEARCH -->
-<div class="search-container">
-    <input class="search-input" type="text">
-    <img class="search-icon-input" src="images/3844432-magnifier-search-zoom_110300.svg" alt="search">
 </div>
 <!-- MODAL WINDOW -->
 <div class="container-modal-window-nav">
@@ -196,12 +197,12 @@
             <p class="banner-item">Подберём тариф с учётом масштаба и специфики вашего бизнеса</p>
             <div class="modal-form">
                 <div class="container-form-field">
-                    <input class="form-field" type="text" placeholder="Имя">
-                    <div class="error-name error-message">Имя указано неверно</div>
+                    <input class="form-field field-name" type="text" placeholder="Имя">
+                    <div class="error-name">Имя указано неверно</div>
                 </div>
                 <div class="container-form-field">
-                    <input class="form-field" type="text" placeholder="Номер телефона">
-                    <div class="error-phone-number error-message">Телефон указан неверно</div>
+                    <input class="form-field filed-phone-number" type="text" placeholder="Номер телефона">
+                    <div class="error-phone-number">Телефон указан неверно</div>
                 </div>
                 <button class="btn-open">Открыть</button>
             </div>
@@ -217,5 +218,6 @@
 <script src="scripts/login.js"></script>
 <script src="scripts/header-search.js"></script>
 <script src="scripts/modules.js"></script>
+<script src="scripts/businessAccountValidation.js"></script>
 </body>
 </html>

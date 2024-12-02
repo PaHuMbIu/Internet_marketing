@@ -25,12 +25,10 @@ for (const field of fieldNavEls) {
 
 // SEARCH
 const searchIconEl = document.querySelector('.search-icon');
-const containerNavigationEl = document.querySelector('.container-navigation');
 const searchContainerEl = document.querySelector('.search-container');
 const searchInputEl = document.querySelector('.search-input');
 
 searchIconEl.addEventListener('click', () => {
-    containerNavigationEl.style.display = 'none';
     searchContainerEl.style.display = 'flex';
     searchInputEl.focus();
     overlay(overlayEl, true);
@@ -38,7 +36,6 @@ searchIconEl.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
     if (event.target === overlayEl) {
-        containerNavigationEl.style.display = 'flex';
         searchContainerEl.style.display = 'none';
         overlay(overlayEl, false);
     }

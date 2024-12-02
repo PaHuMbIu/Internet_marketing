@@ -34,9 +34,7 @@ function overlay(overlayEl, isVisible) {
     if (isVisible) {
         overlayEl.classList.add('overlay');
         document.body.prepend(overlayEl);
-        document.body.style.overflow = 'hidden';
     } else if (overlayEl.classList.contains('overlay')) {
-        document.body.style.overflow = 'scroll';
         overlayEl.classList.remove('overlay');
         overlayEl.remove();
     }
@@ -77,12 +75,17 @@ loginModalWindowEl.addEventListener('click', () => {
 function correctOrWrong(inputValue) {
 
     if (correctEmailEl.test(inputValue)) {
+
         errorMessageEl.classList.remove('show-error-message');
         modalWindowDialogueEl.classList.remove('error-outline');
+
     } else if (correctPhoneEl.test(inputValue)) {
+
         errorMessageEl.classList.remove('show-error-message');
         modalWindowDialogueEl.classList.remove('error-outline');
+
     } else {
+
         errorMessageEl.classList.add('show-error-message');
         modalWindowDialogueEl.classList.add('error-outline');
     }
@@ -96,11 +99,15 @@ modalWindowDialogueEl.addEventListener('input', () => {
         modalWindowDialogueEl.value = inputValue;
     }
     if (inputValue.length === 2 && /^[0-9]{2}$/.test(inputValue)) {
+
         inputValue = '+7 ' + inputValue.slice(1);
         modalWindowDialogueEl.value = inputValue;
+
     } else if (correctPhoneEl.test(inputValue)) {
+
         IMask(modalWindowDialogueEl, {
             mask: '+{7} 000 000-00-00'
         });
+
     }
 });
