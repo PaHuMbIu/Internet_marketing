@@ -17,6 +17,10 @@
     height: 100%;
 }
 
+.navigation > img {
+    margin-right: 22px;
+}
+
 .field-nav {
     font-size: 16px;
     font-family: "Segoe UI";
@@ -25,11 +29,12 @@
 
     cursor: pointer;
 
-    margin-right: 8px;
+    padding: 8px 16px 8px 16px;
 }
 
 .selected-field-nav {
     padding: 8px 16px 8px 16px;
+
     background-color: #dcdee2;
     border-radius: 8px;
 }

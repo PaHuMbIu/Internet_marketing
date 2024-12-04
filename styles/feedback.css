@@ -1,0 +1,119 @@
+.container-lesson-feedback {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    border: 1px solid #f2f3f5;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    padding: 24px;
+}
+
+.lesson-feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 8px;
+
+    font-family: "Segoe UI";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #0e0e0e;
+}
+
+.rating-star {
+    display: flex;
+    cursor: pointer;
+}
+
+.star {
+    padding: 8px;
+    fill: #b8b9c0;
+}
+
+.star:has(~ .star:hover) {
+    fill: #d91d0b;
+}
+
+.star:hover {
+    fill: #f8b6a9;
+}
+
+.selected-star {
+    fill: #d91d0b;
+}
+
+.container-menu-item-feedback {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 24px 0;
+    margin-bottom: 32px;
+
+    background-color: #f2f3f5;
+    border-radius: 0 0 16px 16px;
+}
+
+.menu-item-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Segoe UI";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0e0e0e;
+
+    gap: 16px;
+}
+
+.container-lesson-feedback-summary {
+    width: 438px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.positive {
+    display: block;
+}
+
+.negative {
+    display: block;
+}
+
+.lesson-feedback-summary {
+    border: 1px solid #b2b2bb;
+    border-radius: 999px;
+    padding: 4px 12px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.active {
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+.underline-container-menu-item-feedback {
+    border-bottom: 1px solid #d5d6dc;
+    margin-bottom: 32px;
+    width: 100%;
+}

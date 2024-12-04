@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header-search.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/feedback.css">
 </head>
 <body>
 
@@ -72,6 +73,7 @@
 </div>
 <!-- MODULES -->
 <div class="content">
+    <div class="container-course-header">
     <div class="course-header">
         <div class="course-info">
             <img src="images/clock.svg" width="16px" height="16px" alt="clock">
@@ -147,7 +149,7 @@
                 <div class="lesson">Что важно для корректных выводов</div>
             </div>
             <!-- LESSON 4 -->
-            <div class="module-list" data-module="4">
+            <div class="module-list last-module" data-module="4">
                 <div class="module-item">Модуль 4</div>
                 <div class="module-title">Управление маркетингом</div>
             </div>
@@ -160,6 +162,7 @@
                 <div class="lesson">Как эффективно работать с командой маркетинга</div>
             </div>
         </div>
+    </div>
     </div>
     <!-- CONTENT  -->
     <div class="course-heading">
@@ -211,13 +214,92 @@
                     персональных данных</a>
             </div>
         </div>
+        <!-- FEEDBACK -->
+        <div class="container-lesson-feedback">
+            <div class="lesson-feedback">
+                <h3 class="feedback-title">Как вам урок?</h3>
+                <div class="rating-star">
+                    <svg class="star" data-star="1" width="20px" height="20px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g id="Interface-Light">
+                                <path class="cls-1"
+                                      d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z"
+                                      id="interface-light-rating-star"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="star" data-star="2" width="20px" height="20px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g id="Interface-Light">
+                                <path class="cls-1"
+                                      d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z"
+                                      id="interface-light-rating-star"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="star" data-star="3" width="20px" height="20px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g id="Interface-Light">
+                                <path class="cls-1"
+                                      d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z"
+                                      id="interface-light-rating-star"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="star" data-star="4" width="20px" height="20px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g id="Interface-Light">
+                                <path class="cls-1"
+                                      d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z"
+                                      id="interface-light-rating-star"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="star" data-star="5" width="20px" height="20px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 2" id="Layer_2">
+                            <g id="Interface-Light">
+                                <path class="cls-1"
+                                      d="M16.41,1.52,19.06,9a1.52,1.52,0,0,0,1.35,1l7.65.32a1.58,1.58,0,0,1,.87,2.8l-6,5a1.6,1.6,0,0,0-.52,1.65l2.08,7.71a1.52,1.52,0,0,1-2.28,1.73l-6.37-4.45a1.44,1.44,0,0,0-1.66,0L7.8,29.23A1.52,1.52,0,0,1,5.52,27.5L7.6,19.79a1.6,1.6,0,0,0-.52-1.65l-6-5a1.58,1.58,0,0,1,.87-2.8l7.65-.32a1.52,1.52,0,0,0,1.35-1l2.65-7.52A1.48,1.48,0,0,1,16.41,1.52Z"
+                                      id="interface-light-rating-star"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-menu-item-feedback positive">
+            <div class="menu-item-feedback">Чего в уроке не хватило?
+                <div class="container-lesson-feedback-summary">
+                    <div class="lesson-feedback-summary">Краткого содержания</div>
+                    <div class="lesson-feedback-summary">Более доступного изложения информации</div>
+                    <div class="lesson-feedback-summary">Новой информации</div>
+                    <div class="lesson-feedback-summary">Дополнительных материалов</div>
+                    <div class="lesson-feedback-summary">Проверки знаний</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-menu-item-feedback negative">
+            <div class="menu-item-feedback">Что понравилось больше всего?
+                <div class="container-lesson-feedback-summary">
+                    <div class="lesson-feedback-summary">Много новой информации</div>
+                    <div class="lesson-feedback-summary">Длина уроков</div>
+                    <div class="lesson-feedback-summary">Доступность изложения информации</div>
+                    <div class="lesson-feedback-summary">Дополнительные материалы</div>
+                    <div class="lesson-feedback-summary">Мало воды, всё по делу</div>
+                </div>
+            </div>
+        </div>
+        <div class="underline-container-menu-item-feedback"></div>
     </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/imask"></script>
 <script src="scripts/login.js"></script>
 <script src="scripts/header-search.js"></script>
 <script src="scripts/modules.js"></script>
 <script src="scripts/businessAccountValidation.js"></script>
+<script src="scripts/feedback.js"></script>
 </body>
 </html>

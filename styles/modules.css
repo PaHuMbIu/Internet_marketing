@@ -4,7 +4,15 @@
     border-top: 1px solid #d5d6dc;
 }
 
+.container-course-header {
+    position: relative;
+}
+
 .course-header {
+    position: sticky;
+    top: 0;
+    width: 40%;
+
     padding-left: 380px;
     padding-top: 30px;
 }
@@ -65,8 +73,13 @@
     background-color: #e7e8ea;
 }
 
-.module-list:last-child {
+.last-module {
     border-radius: 0 0 8px 8px;
+    border-bottom: 2px solid #e7e8ec;
+}
+
+.container-lesson:last-child {
+    border-radius: 0 0 0 8px;
     box-shadow: 0 1px 0 #e7e8ec;
 }
 

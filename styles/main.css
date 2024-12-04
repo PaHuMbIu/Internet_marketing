@@ -1,8 +1,13 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-y: visible;
 }
+
+.main-scrollbar {
+    overflow: hidden;
+    margin-right: 17px;
+}
+
 
 .overlay {
     position: fixed;

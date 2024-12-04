@@ -11,6 +11,10 @@ moduleListEls.forEach(module => {
             containerLessonsEls.forEach(lesson => {
                 if (lesson.getAttribute('data-module') === moduleId) {
                     lesson.classList.remove('show-container-lesson');
+
+                    if (lesson.getAttribute('data-module') === '4') {
+                        moduleListEls[3].classList.add('last-module');
+                    }
                 }
             });
         } else {
@@ -18,6 +22,10 @@ moduleListEls.forEach(module => {
             containerLessonsEls.forEach(lesson => {
                 if (lesson.getAttribute('data-module') === moduleId) {
                     lesson.classList.add('show-container-lesson');
+
+                    if (lesson.getAttribute('data-module') === '4') {
+                        moduleListEls[3].classList.remove('last-module');
+                    }
                 }
             });
         }

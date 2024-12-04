@@ -5,6 +5,9 @@ const overlayEl = document.createElement('div');
 // OPEN MODAL WINDOW
 buttonEl.addEventListener('click', () => {
     containerModalWindowEl.classList.add('show-modal-window');
+
+    document.body.classList.add('main-scrollbar');
+
     modalWindowDialogueEl.focus();
     overlay(overlayEl, true);
 });
@@ -15,6 +18,9 @@ const closeModalWindowEl = document.querySelector('.close-modal-window');
 closeModalWindowEl.addEventListener('click', () => {
     containerModalWindowEl.classList.remove('show-modal-window');
     modalWindowDialogueEl.value = '';
+
+    document.body.classList.remove('main-scrollbar');
+
     errorMessageEl.classList.remove('show-error-message');
     overlay(overlayEl, false);
 });
@@ -22,6 +28,7 @@ closeModalWindowEl.addEventListener('click', () => {
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && containerModalWindowEl.classList.contains('show-modal-window')) {
         containerModalWindowEl.classList.remove('show-modal-window');
+        document.body.classList.remove('main-scrollbar');
         modalWindowDialogueEl.value = '';
         errorMessageEl.classList.remove('show-error-message');
         overlay(overlayEl, false);
