@@ -3,10 +3,18 @@
     justify-content: center;
     width: 100%;
 
-    border: 1px solid #f2f3f5;
-    border-radius: 16px;
-    margin-bottom: 32px;
-    padding: 24px;
+    border-top: 1px solid #f2f3f5;
+    border-left: 1px solid #f2f3f5;
+    border-right: 1px solid #f2f3f5;
+    border-bottom: 1px solid #f2f3f5;
+    border-radius: 16px 16px 16px 16px;
+    padding: 24px 24px 24px 24px;
+}
+
+.lower-part {
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    padding: 24px 24px 0 24px;
 }
 
 .lesson-feedback {
@@ -32,21 +40,44 @@
     cursor: pointer;
 }
 
+.container-rating-star {
+    position: relative;
+}
+
 .star {
     padding: 8px;
     fill: #b8b9c0;
 }
 
-.star:has(~ .star:hover) {
+.selected-star {
+    position: relative;
     fill: #d91d0b;
+}
+
+.selected-star::after {
+    content: "";
+    background: url("../images/wave.svg") no-repeat center;
+    display: block;
+    position: absolute;
+    top: 30px;
+    height: 100px;
+    width: 100px;
 }
 
 .star:hover {
     fill: #f8b6a9;
 }
 
-.selected-star {
-    fill: #d91d0b;
+/*.star:has(~ .star:hover) {*/
+/*    fill: #d91d0b;*/
+/*}*/
+
+/*.container-rating-star:hover ~ .container-rating-star .star {*/
+/*    fill: #d91d0b; !* JS  *!*/
+/*}*/
+
+.container-rating-star:hover ~ .container-rating-star .star {
+    fill: #b8b9c0; /* JS  */
 }
 
 .container-menu-item-feedback {
@@ -87,12 +118,12 @@
     gap: 12px;
 }
 
-.positive {
+.negative {
     display: block;
 }
 
-.negative {
-    display: block;
+.positive {
+    display: none;
 }
 
 .lesson-feedback-summary {
@@ -112,8 +143,8 @@
     color: #ffffff;
 }
 
-.underline-container-menu-item-feedback {
-    border-bottom: 1px solid #d5d6dc;
-    margin-bottom: 32px;
-    width: 100%;
-}
+/*.underline-container-menu-item-feedback {*/
+/*    border-bottom: 1px solid #d5d6dc;*/
+/*    margin-bottom: 32px;*/
+/*    width: 100%;*/
+/*}*/

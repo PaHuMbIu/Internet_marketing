@@ -1,17 +1,31 @@
-const starsEls = document.querySelectorAll('.star');
+const starEls = document.querySelectorAll('.star');
+// const containerIconWaveEls = document.querySelectorAll('.icon-wave');
 
-starsEls.forEach(star => {
+
+starEls.forEach(star => {
    star.addEventListener('click', () => {
 
       const starId = star.dataset.star;
-      const starIdNumber = Number(starId);
+      const starIdNumber = parseInt(starId);
+
+      // containerIconWaveEls.forEach(iconWave => {
+      //    const iconWaveId = iconWave.dataset.iconWave;
+      //    const iconWaveIdNumber = parseInt(iconWaveId);
+      //
+      //    if (iconWaveIdNumber === starIdNumber) {
+      //       iconWave.classList.remove('hidden-icon-wave');
+      //    } else {
+      //       iconWave.classList.add('hidden-icon-wave');
+      //    }
+      //
+      // });
 
       for (let i = 0; i < starIdNumber; i++) {
-         starsEls[i].classList.add('selected-star');
+         starEls[i].classList.add('selected-star');
       }
 
-      for (let i = starIdNumber; i < starsEls.length; i++) {
-         starsEls[i].classList.remove('selected-star');
+      for (let i = starIdNumber; i < starEls.length; i++) {
+         starEls[i].classList.remove('selected-star');
       }
 
    });
