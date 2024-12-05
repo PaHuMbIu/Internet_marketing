@@ -1,0 +1,67 @@
+.container-resources {
+    display: grid;
+    justify-content: center;
+    column-gap: 32px;
+    grid-template-columns: repeat(4, 267px);
+    background-color: #0e0e0e;
+    padding: 80px 70px 48px;
+
+}
+
+.logo-resources {
+    cursor: pointer;
+}
+
+.resources {
+    margin: 0;
+    padding: 0;
+
+    color: #e9e9fa5e;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+}
+
+.resources > li {
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 15px;
+    font-weight: 400;
+
+    margin-top: 8px;
+
+    cursor: pointer;
+}
+
+.resources > li:hover {
+    color: #828990;
+}
+
+.container-btn-business-question {
+    display: flex;
+}
+
+.btn-business-question {
+    border: none;
+    background-color: #ef3124;
+    border-radius: 8px;
+    min-height: 38px;
+    min-width: 175px;
+    margin-top: 58px;
+    padding: 0 19px 0 19px;
+
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.btn-business-question:hover {
+    background-color: #e32a17;
+}

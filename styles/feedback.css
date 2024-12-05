@@ -158,3 +158,30 @@
     margin-bottom: 32px;
     width: 100%;
 }
+
+.container-btn-next-lesson {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.next-lesson-btn {
+    border: none;
+    min-height: 56px;
+    min-width: 260px;
+    background-color: #0e0e0e;
+    border-radius: 12px;
+    padding: 0 27px 0 27px;
+
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+
+
+    cursor: pointer;
+}
+
+.next-lesson-btn:hover {
+    background-color: #29292c;
+}
