@@ -1,49 +1,48 @@
-const starEls = document.querySelectorAll('.star');
-// const containerIconWaveEls = document.querySelectorAll('.icon-wave');
+const containerRatingStarEls = [...document.querySelectorAll('.container-rating-star')];
 
+containerRatingStarEls.forEach(star => {
+    star.addEventListener('click', () => {
 
-starEls.forEach(star => {
-   star.addEventListener('click', () => {
+        containerRatingStarEls.forEach(el => el.classList.remove('selected-star'));
+        star.classList.add('selected-star');
 
-      const starId = star.dataset.star;
-      const starIdNumber = parseInt(starId);
+        const starIndex = [...containerRatingStarEls].indexOf(star);
 
-      // containerIconWaveEls.forEach(iconWave => {
-      //    const iconWaveId = iconWave.dataset.iconWave;
-      //    const iconWaveIdNumber = parseInt(iconWaveId);
-      //
-      //    if (iconWaveIdNumber === starIdNumber) {
-      //       iconWave.classList.remove('hidden-icon-wave');
-      //    } else {
-      //       iconWave.classList.add('hidden-icon-wave');
-      //    }
-      //
-      // });
+        containerRatingStarEls.forEach((el, index) => {
+           el.classList.toggle('color-rating-star', index <= starIndex);
+        });
 
-      for (let i = 0; i < starIdNumber; i++) {
-         starEls[i].classList.add('selected-star');
-      }
-
-      for (let i = starIdNumber; i < starEls.length; i++) {
-         starEls[i].classList.remove('selected-star');
-      }
-
-   });
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const lessonFeedBackSummaryEls = document.querySelectorAll('.lesson-feedback-summary');
 
 lessonFeedBackSummaryEls.forEach(lesson => {
-   lesson.addEventListener('click', () => {
-      const isActive = lesson.classList.contains('active');
+    lesson.addEventListener('click', () => {
+        const isActive = lesson.classList.contains('active');
 
-      if (!isActive) {
-         lesson.classList.add('active');
-      } else {
-         lesson.classList.remove('active');
-      }
+        if (!isActive) {
+            lesson.classList.add('active');
+        } else {
+            lesson.classList.remove('active');
+        }
 
-   });
+    });
 });
 
 

@@ -49,19 +49,23 @@
     fill: #b8b9c0;
 }
 
-.selected-star {
-    position: relative;
+.color-rating-star > svg {
     fill: #d91d0b;
+}
+
+.selected-star > svg {
+    position: relative;
 }
 
 .selected-star::after {
     content: "";
     background: url("../images/wave.svg") no-repeat center;
-    display: block;
     position: absolute;
-    top: 30px;
-    height: 100px;
-    width: 100px;
+    display: block;
+    top: 40px;
+    width: 40px;
+    height: 24px;
+    pointer-events: none;
 }
 
 .star:hover {
