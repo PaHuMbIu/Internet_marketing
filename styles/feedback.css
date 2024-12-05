@@ -14,7 +14,7 @@
 .lower-part {
     border-bottom: none;
     border-radius: 16px 16px 0 0;
-    padding: 24px 24px 0 24px;
+    padding: 24px 24px 24px 24px;
 }
 
 .lesson-feedback {
@@ -72,12 +72,18 @@
     fill: #f8b6a9;
 }
 
-/*.star:has(~ .star:hover) {*/
-/*    fill: #d91d0b;*/
+
+.star:has(~ .star:hover) .container-rating-star, .container-rating-star:not(:hover) .star:has(~ .star.selected-star) {
+    fill: #d91d0b;
+}
+
+
+/*.star ~ .star:hover {*/
+/*    fill: #d91d0b; !important;*/
 /*}*/
 
-/*.container-rating-star:hover ~ .container-rating-star .star {*/
-/*    fill: #d91d0b; !* JS  *!*/
+/*.container-rating-star:hover (.star:has ~ .star) {*/
+/*    fill: #d91d0b; !important;*/
 /*}*/
 
 .container-rating-star:hover ~ .container-rating-star .star {
@@ -91,7 +97,6 @@
     width: 100%;
 
     padding: 24px 0;
-    margin-bottom: 32px;
 
     background-color: #f2f3f5;
     border-radius: 0 0 16px 16px;
@@ -123,7 +128,7 @@
 }
 
 .negative {
-    display: block;
+    display: none;
 }
 
 .positive {
@@ -147,8 +152,9 @@
     color: #ffffff;
 }
 
-/*.underline-container-menu-item-feedback {*/
-/*    border-bottom: 1px solid #d5d6dc;*/
-/*    margin-bottom: 32px;*/
-/*    width: 100%;*/
-/*}*/
+.underline-container-menu-item-feedback {
+    border-bottom: 1px solid #d5d6dc;
+    padding-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
