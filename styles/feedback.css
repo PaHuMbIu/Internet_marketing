@@ -71,23 +71,11 @@
 .star:hover {
     fill: #f8b6a9;
 }
-
-
-.star:has(~ .star:hover) .container-rating-star, .container-rating-star:not(:hover) .star:has(~ .star.selected-star) {
+.container-rating-star:has(~ .container-rating-star:hover) .star, .rating-star:not(:hover) .container-rating-star:has(~ .container-rating-star.selected-star) .star {
     fill: #d91d0b;
 }
-
-
-/*.star ~ .star:hover {*/
-/*    fill: #d91d0b; !important;*/
-/*}*/
-
-/*.container-rating-star:hover (.star:has ~ .star) {*/
-/*    fill: #d91d0b; !important;*/
-/*}*/
-
 .container-rating-star:hover ~ .container-rating-star .star {
-    fill: #b8b9c0; /* JS  */
+    fill: #b8b9c0;
 }
 
 .container-menu-item-feedback {

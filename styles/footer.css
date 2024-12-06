@@ -1,0 +1,26 @@
+.container-footer {
+    background-color: #1c1c1e;
+    padding: 80px 70px 48px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 312px;
+    margin-left: 312px;
+    text-align: justify;
+
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.footer > p {
+    margin: 8px 0 0;
+}
+
+.footer > p > a {
+    color: #ffffff;
+}
