@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+
+    .container-btn-next-lesson {
+        width: 100%;
+    }
+
+    .next-lesson-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+
+    .container-footer {
+        padding: 48px 32px 48px 32px;
+    }
+
+    .footer {
+        margin: 0;
+        text-align: start;
+    }
+
+}

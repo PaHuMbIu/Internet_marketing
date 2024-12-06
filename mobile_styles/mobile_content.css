@@ -1,0 +1,65 @@
+@media screen and (max-width: 600px) {
+
+    .course-heading {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .course-item-title {
+        margin-bottom: 24px;
+    }
+
+    .content-title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .marker {
+        display: none;
+    }
+
+    .container-marker {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .mobile-marker {
+        position: absolute;
+
+        top: -7px;
+        width: 16px;
+        height: 16px;
+        background-color: #ef3124;
+        border-radius: 100%;
+    }
+
+    .content-underline {
+        width: 100%;
+        margin: 0;
+    }
+
+    .text-content {
+        padding: 12px 0 0 0;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .modal-form {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-field {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-open {
+        width: 100%;
+        height: 56px;
+    }
+    
+}

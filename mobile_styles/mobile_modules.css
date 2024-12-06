@@ -1,0 +1,64 @@
+@media screen and (max-width: 600px) {
+
+    .content {
+        display: flex;
+    }
+
+    .course-header {
+        padding-left: 0;
+    }
+
+    .container-course-header {
+        display: none;
+    }
+
+    .container-menu-course {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-burger-course {
+        display: flex;
+        padding: 16px;
+        border-top: 1px solid #e7e8ec;
+        border-left: 1px solid #e7e8ec;
+        border-right: 1px solid #e7e8ec;
+        background-color: #f2f3f5;
+
+        border-radius: 8px 8px 0 0;
+    }
+
+    .lower-part-container-burger-course {
+        border-radius: 8px;
+        border-bottom: 1px solid #e7e8ec;
+    }
+
+    .menu-course {
+        font-family: "Segoe UI";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+
+        padding-left: 16px;
+    }
+
+    .mobile-course-header {
+        display: block;
+    }
+
+    .course-header {
+        width: auto;
+        padding-top: 0;
+    }
+
+    .hidden-course-header {
+        display: none;
+    }
+
+    .course-info {
+        border-radius: 0;
+        border-top: 1px solid #f2f3f5;
+    }
+
+}

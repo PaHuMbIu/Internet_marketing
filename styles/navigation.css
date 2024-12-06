@@ -17,8 +17,12 @@
     height: 100%;
 }
 
-.navigation > img {
+.navigation-logo {
     margin-right: 22px;
+}
+
+.mobile-logo {
+    display: none;
 }
 
 .field-nav {
@@ -158,4 +162,8 @@
 
 .btn-login:hover {
     background-color: #343434;
+}
+
+.burger-menu {
+    display: none;
 }

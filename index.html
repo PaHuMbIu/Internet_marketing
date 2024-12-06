@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>internet-marketing</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/modal-window.css">
-    <link rel="stylesheet" href="styles/header-search.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/modal_window.css">
+    <link rel="stylesheet" href="styles/navigation_search.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/feedback.css">
     <link rel="stylesheet" href="styles/resources.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <!-- MOBILE -->
+    <link rel="stylesheet" href="mobile_styles/mobile.navigation.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_navigation_search.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_modules.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_content.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_feedback.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_resources.css">
+    <link rel="stylesheet" href="mobile_styles/mobile_footer.css">
 </head>
 <body>
 
@@ -25,7 +33,8 @@
     </div>
     <!-- NAVIGATION -->
     <div class="navigation">
-        <img src="images/logo.png" width="103" height="59" alt="КУРС Проект Альфа-Банка">
+        <img class="navigation-logo" src="images/logo.png" width="103" height="59" alt="КУРС Проект Альфа-Банка">
+        <img class="mobile-logo" src="images/logo_mobile.png" width="26px" height="32px" alt="КУРС Проект Альфа-Банка">
         <nav class="field-nav selected-field-nav">Курсы</nav>
         <nav class="field-nav">Вебинары</nav>
         <nav class="field-nav">База знаний</nav>
@@ -41,9 +50,14 @@
                 <p>+7 495 222-41-00</p>
             </div>
         </div>
-        <div class="container-btn-login">
-            <img class="search-icon" src="images/3844432-magnifier-search-zoom_110300.svg" alt="search">
-            <button class="btn-login">Войти</button>
+        <div class="container-right-menu-navigation">
+            <div class="container-btn-login">
+                <img class="search-icon" src="images/3844432-magnifier-search-zoom_110300.svg" alt="search">
+                <button class="btn-login">Войти</button>
+            </div>
+            <div class="burger-menu">
+                <img src="images/burger.svg" alt="menu">
+            </div>
         </div>
     </div>
 </div>
@@ -176,6 +190,105 @@
         <div class="course-main-title">Интернет-маркетинг для малого бизнеса</div>
         <div class="separator-course-heading">|</div>
         <div class="course-item-title">Интернет-маркетинг для малого бизнеса</div>
+        <!-- MOBILE MODULES -->
+        <div class="container-menu-course">
+            <div class="container-burger-course lower-part-container-burger-course">
+                <img src="images/burger-menu-modules.svg" width="24px" height="25px" alt="menu">
+                <div class="menu-course">Меню курса</div>
+            </div>
+            <div class="mobile-course-header">
+                <div class="course-header hidden-course-header">
+                    <div class="course-info">
+                        <img src="images/clock.svg" width="16px" height="16px" alt="clock">
+                        <div class="course-duration">1 час</div>
+                    </div>
+                    <h3 class="course-title">Интернет-маркетинг для малого бизнеса</h3>
+                    <div class="scrollbar">
+                        <!-- LESSON 1 -->
+                        <div class="module-list" data-module="1">
+                            <div class="module-item">Модуль 1</div>
+                            <div class="module-title">Основы интернет маркетинга</div>
+                        </div>
+                        <div class="container-lesson" data-module="1">
+                            <div class="course-lesson">Урок 1</div>
+                            <div class="lesson">Интернет-маркетинг для малого бизнеса</div>
+                        </div>
+                        <div class="container-lesson" data-module="1">
+                            <div class="course-lesson">Урок 2</div>
+                            <div class="lesson">Исследование рынка и конкурентов</div>
+                        </div>
+                        <div class="container-lesson" data-module="1">
+                            <div class="course-lesson">Урок 3</div>
+                            <div class="lesson">Определение целевой аудитории и ценности продукта</div>
+                        </div>
+                        <div class="container-lesson" data-module="1">
+                            <div class="course-lesson">Урок 4</div>
+                            <div class="lesson">Виды посадочных страниц</div>
+                        </div>
+                        <!-- LESSON 2 -->
+                        <div class="module-list" data-module="2">
+                            <div class="module-item">Модуль 2</div>
+                            <div class="module-title">Каналы привлечения трафика</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 5</div>
+                            <div class="lesson">Воронка продаж и запуск рекламы</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 6</div>
+                            <div class="lesson">Контекстная реклама: применение и способ оценки</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 7</div>
+                            <div class="lesson">Таргетированная реклама: применение и способ оценки</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 8</div>
+                            <div class="lesson">Поисковый маркетинг для бизнеса</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 9</div>
+                            <div class="lesson">Способы оценки эффективности SEO</div>
+                        </div>
+                        <div class="container-lesson" data-module="2">
+                            <div class="course-lesson">Урок 10</div>
+                            <div class="lesson">Медийная реклама, применение и способ оценки</div>
+                        </div>
+                        <!-- LESSON 3 -->
+                        <div class="module-list" data-module="3">
+                            <div class="module-item">Модуль 3</div>
+                            <div class="module-title">Анализ эффективности рекламы: как управлять результатом</div>
+                        </div>
+                        <div class="container-lesson" data-module="3">
+                            <div class="course-lesson">Урок 11</div>
+                            <div class="lesson">Принимаем решения на основе данных</div>
+                        </div>
+                        <div class="container-lesson" data-module="3">
+                            <div class="course-lesson">Урок 12</div>
+                            <div class="lesson">Типы аналитических систем и их особенности</div>
+                        </div>
+                        <div class="container-lesson" data-module="3">
+                            <div class="course-lesson">Урок 13</div>
+                            <div class="lesson">Что важно для корректных выводов</div>
+                        </div>
+                        <!-- LESSON 4 -->
+                        <div class="module-list last-module" data-module="4">
+                            <div class="module-item">Модуль 4</div>
+                            <div class="module-title">Управление маркетингом</div>
+                        </div>
+                        <div class="container-lesson" data-module="4">
+                            <div class="course-lesson">Урок 14</div>
+                            <div class="lesson">Как и когда нужно создавать отдел маркетинга внутри компании</div>
+                        </div>
+                        <div class="container-lesson" data-module="4">
+                            <div class="course-lesson">Урок 15</div>
+                            <div class="lesson">Как эффективно работать с командой маркетинга</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
         <h1 class="content-title">Интернет-маркетинг для малого бизнеса</h1>
         <p class="content-description">В этом видео управляющий директор агентства интернет-маркетинга KIT SOLER Алина
             Крыжановская рассказывает, что такое интернет-маркетинг, из чего он состоит и какие у него есть преимущества
@@ -187,6 +300,14 @@
                 <source src="blob:https://rb.ru/30d5c89b-3647-468c-9d71-af387e3723a8mp.4" type="video/mp4">
                 Ваш браузер не поддерживает видео.
             </video>
+            <div class="container-marker">
+                <div class="mobile-marker"></div>
+                <div class="content-underline">
+                    <div class="text-content">Алина Крыжановская, управляющий директор агентства интернет-маркетинга KIT
+                        SOLER, эксперт в области интернет-рекламы
+                    </div>
+                </div>
+            </div>
             <div class="marker">
                 <div class="content-underline">
                     <div class="text-content">Алина Крыжановская, управляющий директор агентства интернет-маркетинга KIT
@@ -347,11 +468,13 @@
             ООО «Альфа Диджитал» является оператором по обработке персональных данных, информация об обработке
             персональных
             данных и сведения о реализуемых требованиях к защите персональных данных отражены в <a
-                target="_blank" href="https://rb.ru/kurs/assets/docs/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf">Политике
+                target="_blank"
+                href="https://rb.ru/kurs/assets/docs/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf">Политике
             в отношении обработки персональных данных</a>.
         </p>
         <p>
-            <a target="_blank" href="https://rb.ru/kurs/assets/docs/cookie.pdf">ООО «Альфа Диджитал» использует файлы cookie с целью
+            <a target="_blank" href="https://rb.ru/kurs/assets/docs/cookie.pdf">ООО «Альфа Диджитал» использует файлы
+                cookie с целью
                 персонализации сервисов и повышения удобства пользования веб-сайтом</a>.
             Если вы не хотите, чтобы ваши пользовательские данные обрабатывались, пожалуйста, ограничьте их
             использование в своём браузере.</p>
@@ -376,5 +499,7 @@
 <script src="scripts/modules.js"></script>
 <script src="scripts/businessAccountValidation.js"></script>
 <script src="scripts/feedback.js"></script>
+<!-- MOBILE -->
+<script src="mobile_scripts/mobile_modules.js"></script>
 </body>
 </html>

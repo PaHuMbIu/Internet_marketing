@@ -1,0 +1,49 @@
+@media screen and (max-width: 600px) {
+
+
+    .container-navigation {
+        padding: 16px 0 16px 0;
+    }
+
+    .navigation {
+        padding-left: 0;
+        margin-right: 0;
+
+    }
+
+    .navigation-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        padding-left: 32px;
+    }
+
+    .field-nav {
+        display: none;
+    }
+
+    .separator-field-nav {
+        display: none;
+    }
+
+    .container-field-nav-ep {
+        display: none;
+    }
+
+    .container-btn-login {
+        margin-left: 0;
+    }
+
+    .container-right-menu-navigation {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+    }
+
+    .burger-menu {
+        display: block;
+        padding-left: 24px;
+    }
+}
