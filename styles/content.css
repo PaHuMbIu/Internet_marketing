@@ -84,6 +84,10 @@
     margin-bottom: 32px;
 }
 
+.container-marker {
+    display: none;
+}
+
 .marker {
     position: absolute;
     right: -8px;

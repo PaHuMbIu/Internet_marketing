@@ -1,11 +1,12 @@
 @media screen and (max-width: 600px) {
 
     .search-container {
-        padding-left: 0;
-        width: 63%;
+        padding-left: 16px;
+        width: 92%;
     }
 
     .search-icon-input {
-        left: 14px;
+        left: 26px;
     }
+
 }

@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+
+    .container-modal-window-nav {
+
+    }
+
+    .modal-window-nav {
+        padding: 40px;
+    }
+
+    .dropdown-menu {
+        padding: 10px 30px 10px 10px;
+        right: -40px;
+    }
+
+    .dropdown-menu::after {
+        left: 73.7%;
+    }
+
+}
