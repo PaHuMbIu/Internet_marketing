@@ -6,6 +6,10 @@
     margin-bottom: 64px;
 }
 
+.container-panel-navigation {
+    display: none;
+}
+
 .container-course-header {
     position: relative;
 }

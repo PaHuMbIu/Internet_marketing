@@ -29,9 +29,20 @@
         border-radius: 8px 8px 0 0;
     }
 
+    .collapse-container-burger-course:before {
+        content: "";
+        /*background: url("../images/close-svgrepo-com123.svg.svg") no-repeat;*/
+        width: 24px;
+        height: 25px;
+    }
+
     .lower-part-container-burger-course {
         border-radius: 8px;
         border-bottom: 1px solid #e7e8ec;
+    }
+
+    .hidden-burger-menu-modules {
+        display: none;
     }
 
     .menu-course {

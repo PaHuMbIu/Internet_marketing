@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
 
-
     .container-navigation {
         padding: 16px 0 16px 0;
     }
@@ -42,8 +41,22 @@
         margin-right: 32px;
     }
 
-    .burger-menu {
-        display: block;
-        padding-left: 24px;
+    .btn-login {
+        margin-right: 24px;
     }
+
+    .burger-menu-close {
+        background: url("../images/burger.svg") no-repeat;
+        width: 32px;
+        height: 12px;
+        display: block;
+
+    }
+
+    .burger-menu-open {
+        background: url("../images/close-burger-menu.svg") no-repeat;
+        width: 32px;
+        height: 32px;
+    }
+
 }

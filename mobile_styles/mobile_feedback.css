@@ -1,5 +1,9 @@
 @media screen and (max-width: 600px) {
 
+    .container-lesson-feedback-summary {
+        width: 100%;
+    }
+
     .container-btn-next-lesson {
         width: 100%;
     }
