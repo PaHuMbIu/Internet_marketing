@@ -15,5 +15,11 @@ burgerMenuEl.addEventListener('click', () => {
     }
 
     containerPanelNavigationEl.classList.toggle('hidden-panel-navigation');
+    if (!containerPanelNavigationEl.classList.contains('hidden-panel-navigation')) {
+        document.body.style.overflow = 'hidden';
+
+    } else {
+        document.body.style.overflow = '';
+    }
 
 });

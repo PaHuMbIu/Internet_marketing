@@ -12,4 +12,8 @@
         width: 100%;
     }
 
+    .star:hover {
+        fill: #d91d0b;
+    }
+
 }

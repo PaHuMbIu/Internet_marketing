@@ -3,6 +3,7 @@
     .search-container {
         padding-left: 16px;
         width: 92%;
+        z-index: 100;
     }
 
     .search-icon-input {

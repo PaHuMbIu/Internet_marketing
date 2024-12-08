@@ -12,4 +12,13 @@ containerBurgerCourseEl.addEventListener('click', () => {
     containerBurgerCourseEl.classList.toggle('collapse-container-burger-course');
     burgerMenuModulesEl.classList.toggle('hidden-burger-menu-modules');
 
+    if (containerBurgerCourseEl.classList.contains('collapse-container-burger-course')) {
+        moduleListEls.forEach(module => {
+           module.addEventListener('click',() => {
+                if (module.getAttribute('data-module') === '4') {
+                    module.classList.toggle('last-module');
+                }
+            });
+        });
+    }
 });

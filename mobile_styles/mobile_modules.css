@@ -5,6 +5,8 @@
     }
 
     .course-header {
+        width: auto;
+        padding-top: 0;
         padding-left: 0;
     }
 
@@ -13,6 +15,9 @@
     }
 
     .container-menu-course {
+        position: sticky;
+        top: 18px;
+
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -31,7 +36,7 @@
 
     .collapse-container-burger-course:before {
         content: "";
-        /*background: url("../images/close-svgrepo-com123.svg.svg") no-repeat;*/
+        background: url("../images/mobile_icon_close.svg") no-repeat;
         width: 24px;
         height: 25px;
     }
@@ -58,11 +63,6 @@
         display: block;
     }
 
-    .course-header {
-        width: auto;
-        padding-top: 0;
-    }
-
     .hidden-course-header {
         display: none;
     }
@@ -70,6 +70,10 @@
     .course-info {
         border-radius: 0;
         border-top: 1px solid #f2f3f5;
+    }
+
+    .module-list {
+        background-color: #ffffff;
     }
 
 }
