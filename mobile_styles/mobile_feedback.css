@@ -1,5 +1,9 @@
 @media screen and (max-width: 600px) {
 
+    .container-lesson-feedback {
+        z-index: 1;
+    }
+
     .container-lesson-feedback-summary {
         width: 100%;
     }
